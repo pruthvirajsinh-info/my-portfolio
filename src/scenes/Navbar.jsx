@@ -23,7 +23,7 @@ const Navbar = ({isTop,selectedPage,setSelectedPage}) =>
 
     const isDesktop = useMediaQuery("(min-width: 768px)");
 
-    const navbarBG = isTop ? "" : "bg-red"
+    const navbarBG = isTop ? '' : ' bg-indigo-950/75';
 
 
 // console.log(selectedPage,isDesktop,isMenuToggled);

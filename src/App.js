@@ -17,14 +17,21 @@ function App() {
 
     const handleScroll = () =>
     {
-      if(window.screenY === 0) setIsTop(true);
-      if(window.screenY !== 0) setIsTop(false);
+      if(window.scrollY !== 0)
+      {
+        setIsTop(false);
+      }
+      if(window.scrollY === 0)
+      {
+        setIsTop(true);
+      }
     }
     
     window.addEventListener("scroll",handleScroll);
     return() => window.removeEventListener("scroll",handleScroll);
-  },[]);
+  });
 
+console.log(isTop);
 
   return (
     
@@ -44,8 +51,8 @@ function App() {
         <Landing setSelectedPage={setSelectedPage} />
       </div>
       <LineGradient />
-      <div className={`h-0.5 ${width} bg-gradient-rainblue`}>
-        <MySkills />
+      <div className="w-5/6 mx-auto md:h-full ">
+        <MySkills />        
       </div>
     </div>
   );
