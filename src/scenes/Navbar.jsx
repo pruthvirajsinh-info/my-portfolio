@@ -23,7 +23,7 @@ const Navbar = ({isTop,selectedPage,setSelectedPage}) =>
 
     const isDesktop = useMediaQuery("(min-width: 768px)");
 
-    const navbarBG = isTop ? '' : ' bg-indigo-950/75';
+    const navbarBG = isTop ? '' : ' bg-indigo-950/95';
 
 
 // console.log(selectedPage,isDesktop,isMenuToggled);
@@ -68,7 +68,7 @@ const Navbar = ({isTop,selectedPage,setSelectedPage}) =>
             
             {/* Mobile Menu Pop */}
             {!isDesktop && isMenuToggled && (
-                <div className="fixed right-0 bottom-0 h-full bg-black w-[300px]">
+                <div className="fixed right-0 bottom-0 h-full bg-indigo-400/95 w-[300px]">
                 {/* Close button */}
                 <div className='flex justify-end p-12'>
                     <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
