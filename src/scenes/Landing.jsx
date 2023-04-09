@@ -40,7 +40,7 @@ const Landing = ({setSelectedPage}) =>
           </p>
 
           <p className='mt-10 mb-7 font-playfair text-center md:text-start'>
-            i'm a Developer basd in Gujarat,India. I have developed many types of front ends. <br />
+            i'm a Developer based in Gujarat, India. I have developed many types of front ends. <br />
             I'm passionate about cutting-edge, minimal designs, beautiful interfaces and intuitively implemented UX.
           </p>
         </motion.div>

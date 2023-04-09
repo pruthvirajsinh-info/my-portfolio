@@ -73,7 +73,7 @@ const MySkills = () =>
           <ul className="mt-5 font-rajdhani font-semibold ">
             <li>◆ Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis.</li>
             <li>◆ Helped solidify a brand direction that spans both packaging and web.</li>
-            <li>◆Interfaced with clients on a weekly basis, providing technological expertise.</li>
+            <li>◆ Interfaced with clients on a weekly basis, providing technological expertise.</li>
           </ul>
         </motion.div>
 
