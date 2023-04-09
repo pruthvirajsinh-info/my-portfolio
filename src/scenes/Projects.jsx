@@ -68,7 +68,7 @@ const Projects = () =>
         className='sm:grid sm:grid-cols-3 mt-10'
         initial='hidden'
         whileInView="visible"
-        viewport={{once: true, amount:0.5}}
+        viewport={{once: true, amount:0.2}}
         variants={container}>
 
         {/* Row 1 */}
