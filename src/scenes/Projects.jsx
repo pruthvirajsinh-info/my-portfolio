@@ -37,7 +37,7 @@ const Project = ({title}) =>
 const Projects = () => 
 {
     return (
-    <section id="projects" className='pt-28 pb-20 my-1'>
+    <section id="projects" className='pt-32 pb-10 my-1'>
       {/* Heading  scroll-pb-48 */}
 
     <motion.div
@@ -51,8 +51,8 @@ const Projects = () =>
         visible:{opacity:1, y:0}
         }}>
         <div>
-            <p className='font-playfair font-semibold text-4xl'>
-                <span className='text-red'>Pro</span>jects
+            <p className='font-playfair font-semibold text-4xl text-blue'>
+                <span className='text-red'>PRO</span>JECTS
             </p>
             <div className='flex justify-center mt-5'>
                 <LineGradient width="w-2/5" />

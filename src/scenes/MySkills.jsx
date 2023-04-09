@@ -22,10 +22,10 @@ const MySkills = () =>
           hidden:{opacity:0, x:-50},
           visible:{opacity:1, x:0}
           }}>
-          <p className='font-playfair font-semibold text-4xl mb-5'>
-            My <span className='text-red'>Skills</span>
+          <p className='font-playfair font-semibold text-4xl mb-5 text-red'>
+            MY <span className='text-blue'>SKILLS</span>
           </p>
-          <LineGradient width="w-2/5" />
+          <LineGradient width="w-3/5" />
           <ul className="mt-10 mb-5 font-rajdhani text-lg">
             <li>◆ JavaScript (ES6+)</li>
             <li>◆ TypeScript</li>

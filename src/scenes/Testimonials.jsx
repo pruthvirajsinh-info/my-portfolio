@@ -17,10 +17,11 @@ const Testimonials = () => {
         hidden:{opacity:0, x:-50},
         visible:{opacity:1, x:0} 
         }}>
+        
         <p className='font-playfair font-semibold text-4xl mb-5 text-blue'>
-          <span className='text-red'>T</span>estimonials
+          <span className='text-red'>TEST</span>IMONIALS
         </p>
-        <LineGradient width="mx-auto w-3/5" />
+        <LineGradient width="w-3/4" />
         <p className="mt-10">
           Hello ! I’m currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
         </p>

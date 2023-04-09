@@ -35,10 +35,12 @@ const Contact = () => {
         }}>
         <div>
           <p className='font-playfair font-semibold text-4xl text-blue'>
-          <span className='text-yellow'>CONTACT ME</span> TO GET STARTED
+          <span className='text-yellow'>CONTACT</span>
+          <span className='text-red'> {" "} ME {" "}</span>
+          TO GET STARTED
           </p>
           <div className='flex md:justify-end my-5'>
-            <LineGradient width="w-3/5" />
+            <LineGradient width="w-4/6" />
           </div>
         </div>
       </motion.div>
@@ -112,9 +114,9 @@ const Contact = () => {
               </p>)}
               <button
               type='submit'
-              className='p-3 rounded-full bg-yellow font-semibold text-deep-blue mt-5
-                        hover:bg-red hover:text-white transition duration-500'
-              >Submit
+              className='p-3 rounded-full bg-yellow text-deep-blue mt-5 text-lg font-bold
+                        hover:bg-red hover:text-white transition duration-500 font-rajdhani'
+              >SUBMIT
 
 
               </button>
