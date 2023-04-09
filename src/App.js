@@ -18,7 +18,8 @@ function App() {
   const [isTop,setIsTop] = useState(true);
   const isAMdScreens = useMediaQuery("(min-width: 1060px)");
 
-  useEffect(() => {
+  useEffect(() => 
+{
 
     const handleScroll = () =>
     {
@@ -29,6 +30,7 @@ function App() {
       if(window.scrollY === 0)
       {
         setIsTop(true);
+        setSelectedPage("home");
       }
     }
     
@@ -36,47 +38,49 @@ function App() {
     return() => window.removeEventListener("scroll",handleScroll);
   });
 
-console.log(isTop);
+  console.log(isTop);
 
-  return (
-    
+  return (    
     <div className="app bg-deep-blue">
+    
       <Navbar 
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
-        isTop={isTop}
-      />
-
-      <div className="w-5/6 mx-auto md:h-full">
+        isTop={isTop}>
+      </Navbar>
+      
+      <div className="w-5/6 mx-auto my-1 ">
         {isAMdScreens &&
         (<DotGroup
             selectedPage={selectedPage}
-            setSelectedPage={setSelectedPage}
-          />)}
+            setSelectedPage={setSelectedPage}>
+        </DotGroup>)}
+        
         <Landing setSelectedPage={setSelectedPage} />
-      </div>
 
+      </div>
+      
       <LineGradient />
 
-      <div className="w-5/6 mx-auto my-auto md:h-full ">
+      <div className="w-5/6 mx-auto my-1 py-1">
         <MySkills />   
       </div>
 
       <LineGradient />
 
-      <div className="w-5/6 mx-auto ">
+      <div className="w-5/6 mx-auto my-1 py-1">
         <Projects />        
       </div>
 
       <LineGradient />
       
-      <div className="w-5/6 mx-auto md:h-full">
+      <div className="w-5/6 mx-auto my-1 py-1">
         <Testimonials />        
       </div>
 
       <LineGradient />
       
-      <div className="w-5/6 mx-auto md:h-full">
+      <div className="w-5/6 mx-auto my-1 py-1">
         <Contact />        
       </div>
 

@@ -574,6 +574,12 @@ video {
   }
 }
 
+@media (min-width: 620px){
+  .container{
+    max-width: 620px;
+  }
+}
+
 @media (min-width: 768px){
   .container{
     max-width: 768px;
@@ -583,6 +589,18 @@ video {
 @media (min-width: 1060px){
   .container{
     max-width: 1060px;
+  }
+}
+
+@media (min-width: 1200px){
+  .container{
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1700px){
+  .container{
+    max-width: 1700px;
   }
 }
 
@@ -754,8 +772,8 @@ video {
   height: 8rem;
 }
 
-.h-64{
-  height: 16rem;
+.h-60{
+  height: 15rem;
 }
 
 .h-\[350px\]{
@@ -764,14 +782,6 @@ video {
 
 .h-full{
   height: 100%;
-}
-
-.h-24{
-  height: 6rem;
-}
-
-.h-60{
-  height: 15rem;
 }
 
 .max-h-\[400px\]{
@@ -924,6 +934,11 @@ video {
   background-color: rgb(253 204 73 / var(--tw-bg-opacity));
 }
 
+.bg-indigo-950{
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 27 75 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-rainblue{
   background-image: linear-gradient(90deg, #24CBFF 14.53%, #FC59FF 69.36%, #FFBD0C 117.73%);
 }
@@ -1016,11 +1031,19 @@ video {
 }
 
 .font-opensans{
-  font-family: Abril Fatface, Rajdhani, Rubik Pixels;
+  font-family: Abril Fatface, sans-serif;
 }
 
 .font-playfair{
-  font-family: Playfair Display;
+  font-family: Playfair Display, serif;
+}
+
+.font-rajdhani{
+  font-family: Rajdhani;
+}
+
+.font-rubik{
+  font-family: Rubik Pixels;
 }
 
 .text-2xl{
@@ -1058,8 +1081,17 @@ video {
   line-height: 1.75rem;
 }
 
+.text-7xl{
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
 .font-semibold{
   font-weight: 600;
+}
+
+.font-bold{
+  font-weight: 700;
 }
 
 .text-blue{
@@ -1080,6 +1112,11 @@ video {
 .text-yellow{
   --tw-text-opacity: 1;
   color: rgb(253 204 73 / var(--tw-text-opacity));
+}
+
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .placeholder-opaque-black::-webkit-input-placeholder{
@@ -1384,5 +1421,10 @@ html, body, #root, .app
 
   .md\:text-start{
     text-align: start;
+  }
+
+  .md\:before\:max-w-\[600px\]::before{
+    content: var(--tw-content);
+    max-width: 600px;
   }
 }

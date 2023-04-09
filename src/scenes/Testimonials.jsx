@@ -3,9 +3,9 @@ import LineGradient from "../components/LineGradient";
 import { motion } from 'framer-motion';
 
 const Testimonials = () => {
-  const testStyles = `mx-auto relative max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48 before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2`
+  const testStyles = `mx-auto relative max-w-[400px] w-[400px] h-[350px] flex flex-col justify-end p-16 mt-32 before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2`
   return (
-    <section id='testimonials' className='pt-32   pb-16'>
+    <section id='testimonials' className='pt-32 my-1'>
       {/* Heading */}
       <motion.div
         className='md:w-1/3 text-center md:text-left'
@@ -22,7 +22,7 @@ const Testimonials = () => {
         </p>
         <LineGradient width="mx-auto w-3/5" />
         <p className="mt-10">
-          xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush before:absolute before:-left-[25px] 
+          Hello ! I’m currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
         </p>
       </motion.div>
 
@@ -39,10 +39,10 @@ const Testimonials = () => {
           visible:{opacity:1, scale:1}  
           }}>
             <p className="font-playfair text-6xl">
-              "
+              ❝
             </p>
             <p className="text-center text-xl">
-              xs:relative xs:text-deep-blue xs:font-semibold z-20 
+              Person-1
             </p>
         </motion.div>
 
@@ -57,10 +57,10 @@ const Testimonials = () => {
           visible:{opacity:1, scale:1} 
           }}>
             <p className="font-playfair text-6xl">
-              "
+              ❝
             </p>
             <p className="text-center text-xl">
-              xs:relative xs:text-deep-blue xs:font-semibold z-20 
+              Person-2
             </p>
         </motion.div>
 
@@ -75,10 +75,10 @@ const Testimonials = () => {
           visible:{opacity:1, scale:1}  
           }}>
             <p className="font-playfair text-6xl">
-              "
+              ❝
             </p>
             <p className="text-center text-xl">
-              xs:relative xs:text-deep-blue xs:font-semibold z-20 
+              Person-3
             </p>
         </motion.div>
       </div>

@@ -21,8 +21,10 @@ module.exports = {
           "linear-gradient(90deg, #24CBFF 14.53%, #FC59FF 69.36%, #FFBD0C 117.73%)",
       }),
       fontFamily: {
-        playfair: ["Playfair Display"],
-        opensans: ["Abril Fatface","Rajdhani","Rubik Pixels"],
+        playfair: ["Playfair Display","serif"],
+        opensans: ["Abril Fatface","sans-serif"],
+        rajdhani: ["Rajdhani"],
+        rubik: ["Rubik Pixels"],
       },
       content: {
         brush: "url('./assets/brush.png')",
@@ -33,9 +35,12 @@ module.exports = {
       }
     },
     screens:{
-      xs:"480px",
-      sm:"768px",
-      md:"1060px",
+      xs: "480px",
+      ss: "620px",
+      sm: "768px",
+      md: "1060px",
+      lg: "1200px",
+      xl: "1700px",
     }
   },
   plugins: [],

@@ -21,7 +21,7 @@ const Contact = () => {
   }
 
   return (
-    <section id='contact' className='py=48'>
+    <div id='contact' className='pt-32 my-1'>
       {/* Heading */}
       <motion.div
         className='flex justify-end w-full'
@@ -35,7 +35,7 @@ const Contact = () => {
         }}>
         <div>
           <p className='font-playfair font-semibold text-4xl text-blue'>
-          <span className='text-yellow'>Contact ME</span> to get Started
+          <span className='text-yellow'>CONTACT ME</span> TO GET STARTED
           </p>
           <div className='flex md:justify-end my-5'>
             <LineGradient width="w-3/5" />
@@ -70,6 +70,7 @@ const Contact = () => {
             target="_blank"
             onSubmit={onSubmit}
             method='POST'
+            className='text-right'
             >
             <input type="text" 
             className="w-full bg-blue font-semibold placeholder-opaque-black p-3"
@@ -111,14 +112,16 @@ const Contact = () => {
               </p>)}
               <button
               type='submit'
-              className='p-3 rounded-full bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500'
+              className='p-3 rounded-full bg-yellow font-semibold text-deep-blue mt-5
+                        hover:bg-red hover:text-white transition duration-500'
               >Submit
+
 
               </button>
           </form>
         </motion.div>
       </div>
-    </section>
+    </div>
   )
 }
 
