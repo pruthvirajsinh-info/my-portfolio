@@ -17,11 +17,56 @@ const projectVariant = {
 const Project = ({title}) =>
 {
     const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
-    bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
-    const projTitle = title.split(" ").join("-").toLowerCase();
-    return(
+    bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue` ;
+
+    let projTitle="";
+    let projDetail="";
+    let linkSrc = "" ;
+    let linkBool = false;
+
+    if(title==="Card Collector")
+    {
+      projTitle="project-1";
+        linkSrc="https://pc-pokemon.netlify.app/";
+        linkBool=true;
+        projDetail="Deployed on Netlify"
+    }
+    else if(title==="Raa Chat")
+    {      
+      projTitle="project-2";
+        linkSrc="https://raachat.000webhostapp.com/";
+        linkBool=true;
+        projDetail="Deployed on Hostinger"
+    }
+    else{
+      linkBool=false;
+      projTitle=title.split(" ").join("-").toLowerCase();
+    }
+
+    if(linkBool)
+    {
+      return(
         <motion.div variants={projectVariant} className='relative'>
-            <div className={overlayStyles}>
+
+        <a href={linkSrc} target="_blank">
+                <div className={overlayStyles}>
+                <p className='text-2xl font-playfair text-deep-blue'>
+                    {title}
+                </p>
+                <p className='mt-7'>
+                    {projDetail}
+                </p>
+            </div>
+            <img src={`../assets/${projTitle}.jpeg`} alt={projTitle} />
+        </a>
+            </motion.div>
+    )
+    }
+    
+    
+      return(
+        <motion.div variants={projectVariant} className='relative'>
+                <div className={overlayStyles}>
                 <p className='text-2xl font-playfair text-deep-blue'>
                     {title}
                 </p>
@@ -30,8 +75,11 @@ const Project = ({title}) =>
                 </p>
             </div>
             <img src={`../assets/${projTitle}.jpeg`} alt={projTitle} />
-        </motion.div>
+            </motion.div>
     )
+    
+
+    
 }
 
 const Projects = () => 
@@ -72,11 +120,11 @@ const Projects = () =>
         variants={container}>
 
         {/* Row 1 */}
-            <div className='flex justify-center text-center items-center p-10 bg-red max-w-[400] max-h-[400px] text-2xl font-playfair font-semibold'>
+            <div className='flex justify-center text-center items-center p-10 bg-red max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold'>
                 BEAUTIFUL USER INTERFACES
             </div>
-            <Project title="Project 1" />
-            <Project title="Project 2" />
+            <Project title="Card Collector" />
+            <Project title="Raa Chat"/>
 
         {/* Row 2 */}
 
@@ -88,7 +136,7 @@ const Projects = () =>
 
             <Project title="Project 6" />
             <Project title="Project 7" />
-            <div className='flex justify-center text-center items-center p-10 bg-blue max-w-[400] max-h-[400px] text-2xl font-playfair font-semibold'>
+            <div className='flex justify-center text-center items-center p-10 bg-blue max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold'>
                 SMOOTH USER EXPERIENCE
             </div>
 

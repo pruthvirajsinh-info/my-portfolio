@@ -11,6 +11,9 @@ import Testimonials from "./scenes/Testimonials";
 import Contact from "./scenes/Contact";
 import Footer from "./scenes/Footer";
 
+import {Helmet} from "react-helmet";
+
+
 
 function App() {
 
@@ -42,6 +45,11 @@ function App() {
 
   return (    
     <div className="app bg-deep-blue">
+        <Helmet>
+                <meta charSet="utf-8" />
+                <title>Pruthviraj's Portfolio</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
     
       <Navbar 
         selectedPage={selectedPage}

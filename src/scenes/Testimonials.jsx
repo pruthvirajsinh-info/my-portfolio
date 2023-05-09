@@ -3,7 +3,7 @@ import LineGradient from "../components/LineGradient";
 import { motion } from 'framer-motion';
 
 const Testimonials = () => {
-  const testStyles = `mx-auto relative max-w-[400px] w-[400px] h-[350px] flex flex-col justify-end p-16 mt-32 before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2`
+  const testStyles = `mx-auto relative max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48 before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2`
   return (
     <section id='testimonials' className='pt-32 my-1'>
       {/* Heading */}
@@ -43,7 +43,7 @@ const Testimonials = () => {
               ❝
             </p>
             <p className="text-center text-xl">
-              Person-1
+              He is an incredibly talented developer but what really makes him stand out is his work ethic and steady approach.
             </p>
         </motion.div>
 
@@ -61,7 +61,7 @@ const Testimonials = () => {
               ❝
             </p>
             <p className="text-center text-xl">
-              Person-2
+              Throughout the entire process he is responsive, and willing to work through issues as they arise. and I wouldn’t hesitate to recommend or work with him again.
             </p>
         </motion.div>
 
@@ -79,7 +79,7 @@ const Testimonials = () => {
               ❝
             </p>
             <p className="text-center text-xl">
-              Person-3
+              Not only the site is to design, the code is very clean and slick. Love the way he achieved the translations portion of the site.
             </p>
         </motion.div>
       </div>

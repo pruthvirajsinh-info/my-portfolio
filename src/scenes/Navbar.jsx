@@ -7,7 +7,7 @@ const Link = ({ page,selectedPage,setSelectedPage}) =>
     const lowerCasePage = page.toLowerCase();
     return(
         <AnchorLink 
-        className = {` ${selectedPage === lowerCasePage ? "text-yellow" : "" } hover:text-red transition duration-500 `}
+        className = {` ${selectedPage === lowerCasePage ? "text-yellow " : "" } hover:text-red transition duration-500 `}
         href={`#${lowerCasePage}`} 
         onClick={() => setSelectedPage(lowerCasePage)}>
             {page}
@@ -32,7 +32,7 @@ const Navbar = ({isTop,selectedPage,setSelectedPage}) =>
 
             {/* Desktop nav font-rajdhani font-playfair font-opensans */}
             {isDesktop ? (
-                <div className='flex justify-between gap-16 font-rajdhani text-4xl text-blue'>
+                <div className='uppercase flex justify-between gap-16 font-rajdhani text-3xl text-blue'>
                 <Link page="Home"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}

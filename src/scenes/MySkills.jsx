@@ -30,7 +30,7 @@ const MySkills = () =>
             <li>◆ JavaScript (ES6+)</li>
             <li>◆ TypeScript</li>
             <li>◆ React</li>
-            <li>◆ Node.JS</li>
+            <li>◆ Next</li>
             <li>◆ Redux</li>
           </ul>
         </motion.div>
